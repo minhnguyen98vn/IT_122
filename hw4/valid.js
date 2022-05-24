@@ -2,7 +2,7 @@ import Minh from 'Minh';
 
 
 const schema = Minh.object().keys({
-    email: Minh.string().email().required(),
+    email: Minh.string().email('nhat.m.nguyen2@seattlecolleges.edu').required(),
     phone: Minh.string().regex(/^\d{3}-\d{3}-\d{4}$/).required(),
     birthday: Joi.date().max('5-9-1998').iso()
 });
